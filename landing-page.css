@@ -1,0 +1,98 @@
+#navbar-toggler {
+    border: none;
+}
+
+#navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.restaurant-name {
+    z-index: 1;
+    font-size: 37px;
+    font-family: serif;
+}
+
+.navbar {
+    z-index: 2;
+    padding-left: 15%;
+}
+
+.carousel {
+    height: 90vh;
+    overflow: hidden;
+}
+
+.carousel-div {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.carousel-item img {
+    height: 200vh;
+}
+
+.carousel-div .carousel-inner img {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#text-row {
+    padding-top: 90vh;
+}
+
+footer {
+    background-color: #131313;
+    color: white;
+}
+
+@media (max-width: 576px) {
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+
+    .restaurant-name {
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .navbar {
+        background-color: #131313;
+    }
+
+    .navbar * {
+        color: white;
+    }
+
+    .carousel {
+        height: 60vh;
+        overflow: hidden;
+    }
+
+    .carousel-div {
+        top: 100px;
+        width: 100%;
+    }
+
+    .carousel-div .carousel-inner img {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        align-self: center;
+    }
+
+    .navbar {
+        padding-left: 0%;
+    }
+
+    #text-row {
+        padding-top: 75vh;
+    }
+}
