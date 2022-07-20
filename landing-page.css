@@ -10,11 +10,19 @@
     z-index: 1;
     font-size: 37px;
     font-family: serif;
+    background-color: #fffa;
 }
 
 .navbar {
     z-index: 2;
     padding-left: 15%;
+    background-color: #fffa;
+    height: 7.4vh;
+}
+
+.nav-link {
+    color: black;
+    font-size: 12px;
 }
 
 .carousel {
@@ -26,6 +34,10 @@
     position: absolute;
     top: 0;
     width: 100%;
+}
+
+.carousel-item {
+    overflow: hidden;
 }
 
 .carousel-item img {
@@ -40,7 +52,8 @@
 }
 
 #text-row {
-    padding-top: 90vh;
+    text-align: justify;
+    padding: 85vh 6rem 4rem;
 }
 
 footer {
@@ -48,9 +61,84 @@ footer {
     color: white;
 }
 
+footer div {
+    padding: 0.5rem 1.5rem;
+}
+
+footer div a {
+    color: white;
+    text-decoration: none;
+}
+
+footer div a:hover {
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+#restaurant-name {
+    margin: 0px;
+}
+
+footer address {
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: grey;
+
+}
+
+#contact-info {
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#contact-info a {
+    color: grey;
+    text-decoration: underline;
+    margin-top: 0px;
+}
+
+#contact-info a:hover {
+    color: white;
+}
+
+#copyright-info {
+    font-size: 12px;
+    color: grey;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#copyright-info a {
+    color: grey;
+    text-decoration: underline;
+}
+
+#copyright-info a:hover {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        align-self: center;
+    }
+
+    .navbar {
+        padding-left: 0%;
+    }
+
+    #text-row {
+        text-align: justify;
+        padding: 75vh 4rem 2rem;
+    }
+}
+
 @media (max-width: 576px) {
     .navbar .navbar-collapse {
+        position: absolute;
         text-align: center;
+        background-color: #131313;
+        top: 100%;
+        width: 100%;
+        left: 0;
     }
 
     .restaurant-name {
@@ -62,10 +150,15 @@ footer {
 
     .navbar {
         background-color: #131313;
+        height: auto;
     }
 
     .navbar * {
         color: white;
+    }
+
+    .nav-link:hover {
+        color: #b0b0b0;
     }
 
     .carousel {
@@ -81,18 +174,9 @@ footer {
     .carousel-div .carousel-inner img {
         height: 60vh;
     }
-}
-
-@media (max-width: 768px) {
-    .navbar-nav {
-        align-self: center;
-    }
-
-    .navbar {
-        padding-left: 0%;
-    }
 
     #text-row {
-        padding-top: 75vh;
+        padding: 63vh 2rem 0.5rem;
     }
 }
+
